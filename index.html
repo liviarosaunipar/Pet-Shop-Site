@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Amigo - Seu Pet Shop de Confiança</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
+<header id="titulo_principal">
+        <h1 id="título_principal">Pet Amigo</h1>
+        <h2>Pet Shop</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="serviços.html">Serviços</a>
+            <a href="Produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Tudo para o seu pet com carinho! 🐶🐱</h1>
+            <p>Alimentos, acessórios e cuidados especiais para seu melhor amigo</p>
+            <a href="#servicos" class="btn">Conheça nossos serviços</a>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="grid-servicos">
+                <div class="card">
+                    <div class="icon">🐕</div>
+                    <h3>Banho & Tosa</h3>
+                    <p>Banho completo com produtos hipoalergênicos e tosa personalizada</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🛒</div>
+                    <h3>Rações & Petiscos</h3>
+                    <p>Melhores marcas com entrega em casa</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💉</div>
+                    <h3>Vacinação</h3>
+                    <p>Campanhas de vacinação com veterinários experientes</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🏠</div>
+                    <h3>Pet Sitter</h3>
+                    <p>Cuidamos do seu pet enquanto você viaja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Produtos em Destaque</h2>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="https://via.placeholder.com/250x200/4A90E2/FFFFFF?text=Ração+Premium" alt="Ração Premium">
+                    <h3>Ração Premium</h3>
+                    <p class="preco">R$ 89,90</p>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/250x200/E94B3C/FFFFFF?text=Brinquedo" alt="Brinquedo">
+                    <h3>Brinquedo Interativo</h3>
+                    <p class="preco">R$ 45,00</p>
+                </div>
+                <div class="produto">
+                    <img src="https://via.placeholder.com/250x200/2ECC71/FFFFFF?text=Coleira" alt="Coleira">
+                    <h3>Coleira de Couro</h3>
+                    <p class="preco">R$ 79,90</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-grid">
+                <div class="info-contato">
+                    <h3>📍 Visite-nos</h3>
+                    <p>Rua das Flores, 123<br>Bairro Pet Center<br>São Paulo - SP</p>
+                    <p>🕒 Seg-Sáb: 8h às 20h</p>
+                    <p>📱 (11) 99999-9999</p>
+                </div>
+                <form class="form-contato">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> 2026 Pet Amigo. Todos os direitos reservados. 🐾</p>
+        </div>
+    </footer>
 </body>
 </html>
