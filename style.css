@@ -72,3 +72,13 @@
     font-size: 18px;
     color: #555555;
 }
+
+#titulo_principal{
+            color:white;
+            background-color: #8B6F1E;
+        }
+ 
+.titulo_secundario{
+     color:white;
+     background-color: #2F4F2F;
+}
