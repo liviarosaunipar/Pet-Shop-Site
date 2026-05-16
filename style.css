@@ -1,0 +1,74 @@
+/* Reset básico para limpar as margens do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===================================================
+   ESTILO DA PARTE 1: Barra de Navegação (Do jeito de antes)
+   =================================================== */
+#cabecalho {
+    background-color: #4e8cbc;
+    color: white;
+    text-align: center; 
+    padding: 15px;      
+}
+
+#titulo_cabecalho {
+    margin-bottom: 10px;
+}
+
+#cabecalho nav a {
+    color: white;               
+    text-decoration: none;      
+    font-size: 16px;
+    margin: 0 10px;             
+    padding: 5px 10px;          
+}
+
+#cabecalho nav a:hover {
+    background-color: #356b94;  /* Efeito de clique simples */
+}
+
+
+/* ===================================================
+   ESTILO DA PARTE 2: Banner com Imagem (Embaixo do menu)
+   =================================================== */
+#banner {
+    background-image: url('imageminicio.jpeg'); /* Sua foto aqui */
+    background-size: cover;       
+    background-position: center;  
+    height: 80vh;                 /* Ocupa 80% da altura da tela (espaço bom abaixo do menu) */
+    padding-top: 60px;            /* Espaço para a caixinha branca não colar no menu azul */
+}
+
+/* Caixinha branca com transparência na frente da foto */
+#caixa_conteudo {
+    background-color: rgba(255, 255, 255, 0.85); 
+    width: 550px;                 
+    margin: 0 auto;               /* Centraliza a caixinha na tela */
+    padding: 35px;                
+    text-align: center;           
+    border-radius: 15px;          
+}
+
+/* Textos de dentro da caixinha branca */
+#titulo_banner {
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#subtitulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+#boas_vindas {
+    font-size: 18px;
+    color: #555555;
+}
