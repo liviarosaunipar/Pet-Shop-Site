@@ -1,0 +1,147 @@
+/* O asterisco (*) foi restaurado aqui para sumir com a borda branca e arrumar a fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. BARRA DE NAVEGAÇÃO */
+#cabecalho {
+    background-color: #4e8cbc;
+    color: white;
+    text-align: center; 
+    padding: 15px;      
+}
+#titulo_cabecalho {
+    margin-bottom: 10px;
+}
+#cabecalho nav a {
+    color: white;               
+    text-decoration: none;      
+    font-size: 16px;
+    margin: 0 10px;             
+    padding: 5px 10px;          
+}
+#cabecalho nav a:hover {
+    background-color: #356b94;  
+}
+
+/* 2. IMAGEM COBRINDO A TELA TODA */
+#espaco_imagem {
+    background-color: #dddddd;   
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    
+    /* Faz a imagem ocupar a tela inteira descontando a nav bar */
+    min-height: calc(100vh - 90px); 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    
+    padding: 40px 20px; 
+    position: relative; 
+}
+
+/* Caixa branca central (Subida e com espaço embaixo) */
+#caixa_texto {
+    background-color: rgba(255, 255, 255, 0.85); 
+    width: 100%;
+    max-width: 500px;                 
+    padding: 25px;                
+    text-align: center;           
+    border-radius: 15px;          
+    
+    margin-top: 40px; 
+    margin-bottom: 300px; 
+}
+#titulo_banner { font-size: 20px; color: #333; margin-bottom: 5px; }
+#subtitulo { font-size: 28px; font-weight: bold; color: #000; margin-bottom: 5px; }
+#boas_vindas { font-size: 16px; color: #555; }
+
+/* 3. CAIXA DE LOCALIZAÇÃO (NA LATERAL DIREITA) */
+#caixa_endereco {
+    background-color: rgba(255, 255, 255, 0.85); 
+    width: 100%;
+    max-width: 450px;             
+    padding: 15px; 
+    border-radius: 15px; 
+    
+    position: absolute;
+    right: 40px;  
+    bottom: 40px; 
+    
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Quadrado do Mapa */
+#mapa_falso {
+    background-color: rgba(78, 140, 188, 0.2);   
+    width: 160px; 
+    height: 90px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;          
+    color: #4e8cbc;
+    font-weight: bold;
+    flex-shrink: 0; 
+}
+
+/* Textos do contato */
+#dados_contato {          
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;            
+}
+#dados_contato h3 {
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 850px) {
+    #espaco_imagem {
+        justify-content: space-between;
+    }
+    #caixa_texto {
+        margin-bottom: 40px;
+    }
+    #caixa_endereco {
+        position: static;
+        margin-top: 20px;
+        max-width: 500px;
+    }
+}
+
+/* Textos do contato */
+#dados_contato {          
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;            
+}
+#dados_contato h3 {
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+/* RESPONSIVIDADE AUTOMÁTICA: Se abrir no celular, o endereço volta para baixo 
+   da caixa de texto para não quebrar o visual nem cobrir os bichinhos */
+@media (max-width: 850px) {
+    #espaco_imagem {
+        justify-content: space-between;
+    }
+    #caixa_texto {
+        margin-bottom: 40px;
+    }
+    #caixa_endereco {
+        position: static;
+        margin-top: 20px;
+        max-width: 500px;
+    }
+}
